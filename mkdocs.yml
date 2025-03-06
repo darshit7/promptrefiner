@@ -1,0 +1,60 @@
+site_name: PromptRefiner
+site_url: https://darshit7.github.io/promptrefiner/
+repo_url: https://github.com/darshit7/promptrefiner
+repo_name: promptrefiner
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  highlightjs: true
+  palette:
+    scheme: slate
+    primary: deep-purple
+    accent: lime
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.instant
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.annotate
+    - content.code.copy
+  hljs_languages:
+    - python
+    - bash
+
+markdown_extensions:
+  - admonition
+  - pymdownx.extra
+  - pymdownx.inlinehilite
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_source: true
+            heading_level: 2
+            docstring_style: google
+            merge_init_into_class: true
+
+nav:
+  - Home:
+    - Get Started: index.md
+    - Supported Models & API Key handling: models.md
+    - Prompt Refiner Strategies: strategies.md
+    - Related Research: research.md
+    - Contributing: contributing.md
+  - Release Notes: release_notes.md
+  - API Documentation:
+    - PromptRefiner:
+      - Loading Configurations: api/setup.md
+      - Refiner: api/refiner.md
+      - LLM Client: api/client_factory.md
+      - Base Strategy: api/base_strategy.md
+      - Strategies:
+        - Few Shot: api/strategies/few_shot.md

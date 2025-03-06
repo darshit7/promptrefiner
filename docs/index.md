@@ -1,15 +1,4 @@
-<div align="center">
-  <img src="./docs/assets/logo.png" alt="promptrefiner Logo" width="200">
-  
-  # Promptrefiner 🚀  
-  **Enhancing prompts with intelligent strategies for LLMs**  
-
-  [![PyPI Version](https://img.shields.io/pypi/v/promptrefiner)](https://pypi.org/project/promptrefiner/)
-  [![GitHub Repo](https://img.shields.io/badge/GitHub-Code-black?logo=github)](https://github.com/darshit7/promptrefiner)
-  [![License](https://img.shields.io/github/license/darshit7/promptrefiner)](https://darshit7.github.io/promptrefiner/LICENSE)
-  [![Docs](https://img.shields.io/badge/docs-Promptrefiner-blue)](https://darshit7.github.io/promptrefiner/)
-</div>
-
+# Promptrefiner
 ## 🚀 Welcome to Promptrefiner
 
 > **Helping you craft the perfect prompt for better LLM responses!**
@@ -56,12 +45,13 @@ export PREFINER_MODEL="openai/gpt-4"  # Change based on your LLM model
 and there you go...  
 
 ```sh
-promptrefiner --strategy few_shot "Tell me about AI"
+promptrefiner --strategy persona "Tell me about AI"
 ```
 
 ### 🐍 **Using in a Python Script**
 
-> Make sure to **set environment variables** `PREFINER_API_KEY` and `PREFINER_MODEL` before using `PromptRefiner` in your python script.
+!!! note
+    Make sure to **set environment variables** `PREFINER_API_KEY` and `PREFINER_MODEL` before using `PromptRefiner` in your python script.
 
 ```python
 from promptrefiner import PromptRefiner
@@ -71,13 +61,6 @@ refined_prompt = prompt_refiner.refine("Explain quantum mechanics.")
 print(refined_prompt)
 ```
 
-### ❓ Help Section of `promptrefiner`
-Access available list of strategies, it's alias and all required help thorugh `--help` option.
-
-```bash
-(env) $promptrefiner --help
-```
-![PromptRefiner Help](./docs/assets/pr_help.jpg)
 ---
 
 ## 🔍 How It Works
