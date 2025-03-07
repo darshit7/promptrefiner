@@ -1,4 +1,35 @@
-# Promptrefiner
+<p align="center" markdown="1">
+    <h1 align="center" style="margin-left:35px;">**Promptrefiner**</h1>
+</p>
+
+<p align="center">
+    <img src="./assets/logo.png" alt="promptrefiner Logo" width="200">
+</p>
+
+<p align="center">
+  <em>Enhancing prompts with intelligent strategies for LLMs</em>
+</p>
+
+<p align="center">
+    <a href="https://pypi.org/project/promptrefiner/" target="_blank">
+        <img src="https://img.shields.io/pypi/v/promptrefiner" alt="Test">
+    </a>
+
+    <a href="https://github.com/darshit7/promptrefiner" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-Code-black?logo=github" alt="Test">
+    </a>
+
+    <a href="https://darshit7.github.io/promptrefiner/LICENSE" target="_blank">
+        <img src="https://img.shields.io/github/license/darshit7/promptrefiner" alt="Test">
+    </a>
+
+    <a href="https://darshit7.github.io/promptrefiner/" target="_blank">
+        <img src="https://img.shields.io/badge/docs-Promptrefiner-blue" alt="Test">
+    </a>
+</p>
+
+---
+
 ## 🚀 Welcome to Promptrefiner
 
 > **Helping you craft the perfect prompt for better LLM responses!**

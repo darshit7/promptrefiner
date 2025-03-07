@@ -56,7 +56,7 @@ export PREFINER_MODEL="openai/gpt-4"  # Change based on your LLM model
 and there you go...  
 
 ```sh
-promptrefiner --strategy few_shot "Tell me about AI"
+promptrefiner --strategy fewshot "Tell me about AI"
 ```
 
 ### 🐍 **Using in a Python Script**

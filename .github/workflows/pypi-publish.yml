@@ -25,6 +25,5 @@ jobs:
 
       - name: Publish to PyPI
         env:
-          HATCH_INDEX_USER: ${{ secrets.PYPI_USERNAME }}
-          HATCH_INDEX_AUTH: ${{ secrets.PYPI_PASSWORD }}
+          HATCH_INDEX_AUTH: ${{ secrets.PYPI_API_TOKEN }}
         run: hatch publish
