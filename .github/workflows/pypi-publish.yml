@@ -5,8 +5,12 @@ on:
     types: [published]
 
 jobs:
-  deploy:
+  pypi-publish:
+    name: Publish to PyPI
     runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
 
     steps:
       - name: Checkout code
@@ -23,7 +27,5 @@ jobs:
       - name: Build package
         run: hatch build
 
-      - name: Publish to PyPI
-        env:
-          HATCH_INDEX_AUTH: ${{ secrets.PYPI_API_TOKEN }}
-        run: hatch publish
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
