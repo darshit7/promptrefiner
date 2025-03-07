@@ -7,6 +7,6 @@ from .refiner import PromptRefiner
 
 logging.getLogger(__name__).addHandler(logging.NullHandler())
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
 
 __all__ = ["PromptRefiner"]
